@@ -2,10 +2,11 @@ import React from "react";
 import { Filter, SquareX } from "lucide-react";
 import { reportsData } from "@/constants/reportsData";
 import ReportTable from "@/components/ReportTable";
+import ReportItem from "@/components/ReportItem";
 
 const Page = () => {
   return (
-    <div className="bg-gray-200 h-full flex flex-col items-center p-2 w-full">
+    <div className="bg-gray-200 h-[66.2rem] flex flex-col items-center p-2 w-full">
       <div className="bg-white m-2 rounded-lg w-full flex justify-center items-center flex-col">
         <h1 className="font-bold text-2xl mt-2 mb-4 text-gray-700">
           Recently Generated Reports
@@ -18,7 +19,9 @@ const Page = () => {
         <div className="bg-gray-100 w-full ">
           <ReportTable />
         </div>
-        <div></div>
+        <div className="w-full ">
+          <ReportItem />
+        </div>
       </div>
     </div>
   );
